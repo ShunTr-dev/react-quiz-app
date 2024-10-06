@@ -19,8 +19,8 @@ export default [
     },
     {
         rules: {
-            'no-unused-vars': 'off',
-            'no-undef': 'off',
+            'no-unused-vars': 'error',
+            'no-undef': 'error',
             'react/jsx-uses-react': 'off',
             'react/jsx-uses-vars': 'warn',
             'react/react-in-jsx-scope': 'off',
@@ -39,7 +39,7 @@ export default [
             // 'arrow-body-style': ['error', 'as-needed'],
             // 'no-unexpected-multiline': 'error',
 
-            'react/prop-types': 'off',
+            //'react/prop-types': 'off',
             // 'react/no-unescaped-entities': 'warn',
             // 'react/no-unknown-property': 'warn',
             // 'react/no-unsafe': 'warn',
