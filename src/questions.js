@@ -102,7 +102,7 @@ export default [
             'Los objetos de host son proporcionados por el entorno, y los objetos nativos son parte del lenguaje JavaScript.',
             'Los objetos de host son parte del lenguaje, y los objetos nativos son proporcionados por el navegador.',
             'Los objetos nativos y de host son lo mismo en JavaScript.',
-            'Los host no son racistas, son ordenados.',
+            'A mi Josemanué no me dijo que habia que venir duchado.',
         ],
     },
     {
