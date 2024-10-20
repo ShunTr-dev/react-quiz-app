@@ -1,8 +1,6 @@
+# ¿Quién quiere ser programador? [![Netlify Status](https://api.netlify.com/api/v1/badges/63c83f7c-efdb-4725-ad69-806cbf7e175a/deploy-status)](https://app.netlify.com/sites/react-and-js-quiz/deploys)
 
-
-# Quiz de JavaScript y React [![Netlify Status](https://api.netlify.com/api/v1/badges/63c83f7c-efdb-4725-ad69-806cbf7e175a/deploy-status)](https://app.netlify.com/sites/react-and-js-quiz/deploys)
-
-Este repositorio contiene un quiz interactivo con preguntas sobre JavaScript y React. Es un proyecto educativo diseñado para evaluar los conocimientos sobre estos temas clave y para servir como una herramienta divertida de aprendizaje.
+Este repositorio contiene un quiz interactivo con preguntas sobre JavaScript. Es un proyecto educativo diseñado para evaluar los conocimientos sobre estos temas clave y para servir como una herramienta divertida de aprendizaje.
 
 ## Características del Proyecto
 
@@ -49,7 +47,7 @@ Sigue estos pasos para instalar y ejecutar el proyecto localmente:
 ## Uso de la aplicación
 
 1. **Inicia el quiz**: Una vez cargada la aplicación, puedes comenzar el quiz haciendo clic en el botón de inicio.
-2. **Responde las preguntas**: Se te presentarán una serie de preguntas con opciones múltiples relacionadas con JavaScript y React.
+2. **Responde las preguntas**: Se te presentarán una serie de preguntas con opciones múltiples relacionadas con JavaScript.
 3. **Obtén tu puntuación**: Al finalizar, recibirás una puntuación basada en las respuestas correctas.
 4. **Repite el quiz**: Puedes reiniciar el quiz para practicar de nuevo.
 
@@ -61,12 +59,14 @@ Si deseas agregar más preguntas al quiz, puedes hacerlo modificando el archivo 
 export const questions = [
     {
         id: 'q1',
-        text: 'Which of the following definitions best describes React.js?',
+        text: 'Explica la delegación de eventos',
+        explanation:
+            'La delegación de eventos es una técnica en JavaScript en la que asignas un evento a un elemento padre en lugar de asignarlo a cada uno de los elementos hijos individuales. Esto funciona debido a la propagación de eventos (event bubbling). En lugar de agregar un manejador de eventos a cada elemento hijo, se asigna a un ancestro común. El evento se propaga desde el elemento hijo al padre y se puede detectar cuál fue el origen del evento usando event.target',
         answers: [
-            'A library to build user interfaces with help of declarative code.',
-            'A library for managing state in web applications.',
-            'A framework to build user interfaces with help of imperative code.',
-            'A library used for building mobile applications only.',
+            'Es un método en la que se asigna un evento a un elemento padre en lugar de a cada uno de los hijos individuales',
+            'Es un método para detener la propagación de eventos',
+            'Es una técnica para agregar múltiples eventos a un solo elemento hijo',
+            'Es cuando tu cuñado te dice que él te lo hace más barato',
         ],
     },
 ]
@@ -75,3 +75,6 @@ export const questions = [
 ## Contribuciones
 
 Las contribuciones a este proyecto son bienvenidas. Si tienes sugerencias para mejorar la aplicación, nuevas preguntas o cualquier otra idea, siéntete libre de abrir un issue o enviar un pull request.
+
+-   [Guía de como hacer una PULL REQUEST](https://www.youtube.com/watch?v=BPns9r76vSI) - Gracias midu -
+-   Proyecto iniciado a través de la clase de [Maximilian Schwarzmüller](https://www.udemy.com/course/react-the-complete-guide-incl-redux)
