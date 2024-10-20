@@ -1,10 +1,10 @@
 import { useState } from 'react';
-
-import QuestionTimer from './QuestionTimer.jsx';
 import Answers from './Answers.jsx';
 import QUESTIONS from '../questions.js';
 
-export default function Question({ index, onSelectAnswer, onSkipAnswer }) {
+export default function Question({ index, onSelectAnswer }) {
+    const [showNextButton, setShowNextButton] = useState(false);
+
     const [answer, setAnswer] = useState({
         selectedAnswer: '',
         isCorrect: null,
@@ -32,10 +32,13 @@ export default function Question({ index, onSelectAnswer, onSkipAnswer }) {
                 isCorrect: QUESTIONS[index].answers[0] === answer,
             });
 
-            setTimeout(() => {
-                onSelectAnswer(answer);
-            }, 2000);
+            setShowNextButton(true);
         }, 1000);
+    }
+
+    function handleNextQuestion() {
+        // console.log(answer);
+        onSelectAnswer(answer);
     }
 
     let answerState = '';
@@ -48,9 +51,13 @@ export default function Question({ index, onSelectAnswer, onSkipAnswer }) {
 
     return (
         <div id="question">
-            <QuestionTimer key={timer} timeout={timer} onTimeout={answer.selectedAnswer === '' ? onSkipAnswer : null} mode={answerState} />
             <h2>{QUESTIONS[index].text}</h2>
             <Answers answers={QUESTIONS[index].answers} selectedAnswer={answer.selectedAnswer} answerState={answerState} onSelect={handleSelectAnswer} />
+            {showNextButton && (
+                <div className="actions">
+                    <button onClick={handleNextQuestion}>Next</button>
+                </div>
+            )}
         </div>
     );
 }

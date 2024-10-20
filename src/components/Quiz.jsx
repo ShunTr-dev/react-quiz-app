@@ -7,6 +7,8 @@ import Summary from './Summary.jsx';
 export default function Quiz() {
     const [userAnswers, setUserAnswers] = useState([]);
 
+    console.log(userAnswers);
+
     const activeQuestionIndex = userAnswers.length;
     const quizIsComplete = activeQuestionIndex === QUESTIONS.length;
 
@@ -16,15 +18,13 @@ export default function Quiz() {
         });
     }, []);
 
-    const handleSkipAnswer = useCallback(() => handleSelectAnswer(null), [handleSelectAnswer]);
-
     if (quizIsComplete) {
         return <Summary userAnswers={userAnswers} />;
     }
 
     return (
         <div id="quiz">
-            <Question key={activeQuestionIndex} index={activeQuestionIndex} onSelectAnswer={handleSelectAnswer} onSkipAnswer={handleSkipAnswer} />
+            <Question key={activeQuestionIndex} index={activeQuestionIndex} onSelectAnswer={handleSelectAnswer} />
         </div>
     );
 }
