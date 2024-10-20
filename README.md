@@ -6,10 +6,17 @@ Este repositorio contiene un quiz interactivo con preguntas sobre JavaScript y R
 
 ## Características del Proyecto
 
--   **Preguntas sobre JavaScript y React**: Preguntas de opción múltiple relacionadas con conceptos fundamentales de JavaScript y React.
+-   **Preguntas sobre JavaScript y React**: Preguntas de opción múltiple relacionadas con conceptos fundamentales de JavaScript.
 -   **Sistema de puntuación**: Al finalizar el quiz, los usuarios pueden ver su puntaje basado en las respuestas correctas.
 -   **Interfaz interactiva**: La aplicación está construida con React para ofrecer una experiencia de usuario fluida e interactiva.
--   **Retroalimentación**: Muestra al usuario si su respuesta es correcta o incorrecta en cada pregunta.
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=white&style=for-the-badge)
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
+![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 
 ## Instalación
 
@@ -62,7 +69,7 @@ export const questions = [
             'A library used for building mobile applications only.',
         ],
     },
-];
+]
 ```
 
 ## Contribuciones
