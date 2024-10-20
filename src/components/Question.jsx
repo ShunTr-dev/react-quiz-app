@@ -10,16 +10,6 @@ export default function Question({ index, onSelectAnswer }) {
         isCorrect: null,
     });
 
-    let timer = 10000;
-
-    if (answer.selectedAnswer) {
-        timer = 1000;
-    }
-
-    if (answer.isCorrect !== null) {
-        timer = 2000;
-    }
-
     function handleSelectAnswer(answer) {
         setAnswer({
             selectedAnswer: answer,
@@ -37,7 +27,6 @@ export default function Question({ index, onSelectAnswer }) {
     }
 
     function handleNextQuestion() {
-        // console.log(answer);
         onSelectAnswer(answer);
     }
 
