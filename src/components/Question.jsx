@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import Answers from './Answers.jsx'
-import QUESTIONS from '../questions.js'
+import QUESTIONS from '../questions.jsx'
 
-export default function Question({ index, onSelectAnswer }) {
+export default function Question({ index, onSelectAnswer, setShowExplanation }) {
     const [showNextButton, setShowNextButton] = useState(false)
 
     const [answer, setAnswer] = useState({
@@ -22,12 +22,14 @@ export default function Question({ index, onSelectAnswer }) {
                 isCorrect: QUESTIONS[index].answers[0] === answer,
             })
 
+            setShowExplanation(true)
             setShowNextButton(true)
         }, 1000)
     }
 
     function handleNextQuestion() {
         onSelectAnswer(answer)
+        setShowExplanation(false)
     }
 
     let answerState = ''

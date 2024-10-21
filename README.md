@@ -63,6 +63,7 @@ export const questions = [
         explanation:
             'La delegación de eventos es una técnica en JavaScript en la que asignas un evento a un elemento padre en lugar de asignarlo a cada uno de los elementos hijos individuales. Esto funciona debido a la propagación de eventos (event bubbling). En lugar de agregar un manejador de eventos a cada elemento hijo, se asigna a un ancestro común. El evento se propaga desde el elemento hijo al padre y se puede detectar cuál fue el origen del evento usando event.target',
         answers: [
+            // La primera pregunta es la verdadera!
             'Es un método en la que se asigna un evento a un elemento padre en lugar de a cada uno de los hijos individuales',
             'Es un método para detener la propagación de eventos',
             'Es una técnica para agregar múltiples eventos a un solo elemento hijo',

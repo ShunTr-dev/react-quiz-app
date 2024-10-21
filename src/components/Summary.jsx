@@ -1,13 +1,13 @@
-import quizCompleteImg from '../assets/quiz-complete.png';
-import QUESTIONS from '../questions.js';
+import quizCompleteImg from '../assets/quiz-complete.png'
+import QUESTIONS from '../questions.jsx'
 
 export default function Summary({ userAnswers }) {
-    const skippedAnswers = userAnswers.filter((answer) => answer === null);
-    const correctAnswers = userAnswers.filter((answer, index) => answer === QUESTIONS[index].answers[0]);
+    const skippedAnswers = userAnswers.filter((answer) => answer === null)
+    const correctAnswers = userAnswers.filter((answer, index) => answer === QUESTIONS[index].answers[0])
 
-    const skippedAnswersShare = Math.round((skippedAnswers.length / userAnswers.length) * 100);
-    const correctAnswersShare = Math.round((correctAnswers.length / userAnswers.length) * 100);
-    const wrongAnswersShare = 100 - skippedAnswersShare - correctAnswersShare;
+    const skippedAnswersShare = Math.round((skippedAnswers.length / userAnswers.length) * 100)
+    const correctAnswersShare = Math.round((correctAnswers.length / userAnswers.length) * 100)
+    const wrongAnswersShare = 100 - skippedAnswersShare - correctAnswersShare
 
     return (
         <div id="summary">
@@ -25,12 +25,12 @@ export default function Summary({ userAnswers }) {
             </div>
             <ol>
                 {userAnswers.map((answer, index) => {
-                    let cssClass = 'user-answer';
+                    let cssClass = 'user-answer'
 
                     if (answer.selectedAnswer === QUESTIONS[index].answers[0]) {
-                        cssClass += ' correct';
+                        cssClass += ' correct'
                     } else {
-                        cssClass += ' wrong';
+                        cssClass += ' wrong'
                     }
 
                     return (
@@ -39,9 +39,9 @@ export default function Summary({ userAnswers }) {
                             <p className="question">{QUESTIONS[index].text}</p>
                             <p className={cssClass}>{answer.selectedAnswer}</p>
                         </li>
-                    );
+                    )
                 })}
             </ol>
         </div>
-    );
+    )
 }
