@@ -1,4 +1,3 @@
-import quizCompleteImg from '../assets/quiz-complete.png'
 import QUESTIONS from '../questions.jsx'
 
 export default function Summary({ userAnswers }) {
@@ -11,8 +10,7 @@ export default function Summary({ userAnswers }) {
 
     return (
         <div id="summary">
-            <img src={quizCompleteImg} alt="Trophy icon" />
-            <h2>Quiz Completed!</h2>
+            <h2>¿ Eres programador ?</h2>
             <div id="summary-stats">
                 <p>
                     <span className="number">{correctAnswersShare}%</span>
