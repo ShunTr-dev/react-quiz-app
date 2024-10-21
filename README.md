@@ -78,4 +78,5 @@ export const questions = [
 Las contribuciones a este proyecto son bienvenidas. Si tienes sugerencias para mejorar la aplicación, nuevas preguntas o cualquier otra idea, siéntete libre de abrir un issue o enviar un pull request.
 
 -   [Guía de como hacer una PULL REQUEST](https://www.youtube.com/watch?v=BPns9r76vSI) - Gracias midu -
+-   Antes de hacer la PR echarle un ojo al [LightHouse](https://pagespeed.web.dev/analysis/https-quien-quiere-ser-programador-shuntr-dev/597w59fetk?form_factor=mobile) por si algo cambió
 -   Proyecto iniciado a través de la clase de [Maximilian Schwarzmüller](https://www.udemy.com/course/react-the-complete-guide-incl-redux)
