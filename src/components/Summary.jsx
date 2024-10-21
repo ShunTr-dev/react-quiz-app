@@ -10,15 +10,15 @@ export default function Summary({ userAnswers }) {
 
     return (
         <div id="summary">
-            <h2>¿ Eres programador ?</h2>
+            <h2>Hola mundo 👋</h2>
             <div id="summary-stats">
                 <p>
                     <span className="number">{correctAnswersShare}%</span>
-                    <span className="text">answered correctly</span>
+                    <span className="text">respondidas correctamente</span>
                 </p>
                 <p>
                     <span className="number">{wrongAnswersShare}%</span>
-                    <span className="text">answered incorrectly</span>
+                    <span className="text">respondidas incorrectamente</span>
                 </p>
             </div>
             <ol>

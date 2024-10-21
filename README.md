@@ -1,4 +1,4 @@
-# ¿Quién quiere ser programador? [![Netlify Status](https://api.netlify.com/api/v1/badges/63c83f7c-efdb-4725-ad69-806cbf7e175a/deploy-status)](https://app.netlify.com/sites/react-and-js-quiz/deploys)
+# ¿Quién quiere ser programador? [![Netlify Status](https://api.netlify.com/api/v1/badges/63c83f7c-efdb-4725-ad69-806cbf7e175a/deploy-status)](https://app.netlify.com/sites/quien-quiere-ser-programador/deploys)
 
 Este repositorio contiene un quiz interactivo con preguntas sobre JavaScript. Es un proyecto educativo diseñado para evaluar los conocimientos sobre estos temas clave y para servir como una herramienta divertida de aprendizaje.
 
