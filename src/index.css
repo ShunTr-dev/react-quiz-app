@@ -334,3 +334,27 @@ header h1 {
         transform: translateY(0);
     }
 }
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.button {
+    color: #fff;
+    background-color: #005cbf;
+    border-color: #005cbf;
+
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: #004b9f;
+}

@@ -51,7 +51,9 @@ export default function Question({ index, onSelectAnswer, setShowExplanation }) 
             />
             {showNextButton && (
                 <div className="actions">
-                    <button onClick={handleNextQuestion}>Next</button>
+                    <button className="button" onClick={handleNextQuestion}>
+                        Next
+                    </button>
                 </div>
             )}
         </div>
