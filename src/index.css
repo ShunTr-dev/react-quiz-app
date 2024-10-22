@@ -358,3 +358,7 @@ header h1 {
 .button:hover {
     background-color: #004b9f;
 }
+
+pre {
+    text-align: left !important;
+}

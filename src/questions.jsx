@@ -1,7 +1,7 @@
 export default [
     {
         id: 'q1',
-        text: 'Explica la delegación de eventos',
+        text: '¿Qué es la delegación de eventos?',
         explanation: (
             <>
                 <p>
@@ -71,7 +71,11 @@ export default [
     },
     {
         id: 'q2',
-        text: 'Explica cómo funciona this en JavaScript',
+        text: (
+            <>
+                ¿Qué es <code>this</code> en JavaScript?
+            </>
+        ),
         explanation: (
             <>
                 <p>
@@ -149,15 +153,23 @@ export default [
             </>
         ),
         answers: [
-            'this se refiere al objeto desde el cual se invoca una función',
-            'this siempre apunta al objeto window',
-            'this siempre se refiere al objeto global',
-            'this es esto en inglés. Se usa para hablar de algo que está cerca',
+            <>
+                <code>this</code> se refiere al objeto desde el cual se invoca una función
+            </>,
+            <>
+                <code>this</code> siempre apunta al objeto window
+            </>,
+            <>
+                <code>this</code> siempre se refiere al objeto global
+            </>,
+            <>
+                <code>this</code> es "esto" en inglés. Se usa para hablar de algo que está cerca
+            </>,
         ],
     },
     {
         id: 'q3',
-        text: 'Qué es la herencia prototipal',
+        text: '¿Qué es la herencia prototipal?',
         explanation: (
             <>
                 <p>
@@ -199,7 +211,11 @@ export default [
     },
     {
         id: 'q4',
-        text: '¿null y undefined es lo mismo?',
+        text: (
+            <>
+                ¿<code>null</code> y <code>undefined</code> son lo mismo?
+            </>
+        ),
         explanation: (
             <>
                 <p>
@@ -282,9 +298,15 @@ export default [
             </>
         ),
         answers: [
-            'null representa la ausencia intencional de un valor, undefined es una variable ha sido declarada sin valor',
-            'undefined representa la ausencia intencional de un valor, null es una variable ha sido declarada sin valor',
-            'Si, es lo mismo, representa la ausencia de valor',
+            <>
+                <code>null</code> representa la ausencia de valor, <code>undefined</code> es una variable ha sido
+                declarada sin valor
+            </>,
+            <>
+                <code>undefined</code> representa la ausencia de valor, <code>null</code> es una variable ha sido
+                declarada sin valor
+            </>,
+            'Si, son lo mismo, representan la ausencia de valor',
             'Pero como va a ser lo mismo si Goku siempre gana a Freezer',
         ],
     },
@@ -539,7 +561,12 @@ console.log(sum); // Imprime 15`}
     },
     {
         id: 'q7',
-        text: '¿Cuál es la diferencia principal entre los métodos Array.forEach() y Array.map()?',
+        text: (
+            <>
+                ¿Cuál es la diferencia principal entre los métodos <code>Array.forEach()</code> y{' '}
+                <code>Array.map()</code>?
+            </>
+        ),
         explanation: (
             <>
                 <p>
@@ -602,8 +629,13 @@ console.log(sum); // Imprime 15`}
             </>
         ),
         answers: [
-            'forEach itera sobre cada elemento sin devolver nada, mientras que map devuelve un nuevo array',
-            'forEach devuelve un nuevo array y map no',
+            <>
+                <code>forEach</code> itera sobre cada elemento sin devolver nada, mientras que <code>map</code> devuelve
+                un nuevo <code>array</code>
+            </>,
+            <>
+                <code>forEach</code> devuelve un nuevo <code>array</code> y <code>map</code> no
+            </>,
             'Ambos métodos son equivalentes',
             'Que en el maincra no se puede hacer trampa',
         ],
@@ -764,7 +796,18 @@ console.log(sum); // Imprime 15`}
     },
     {
         id: 'q10',
-        text: 'Explica la diferencia entre function Person(){}, var person = Person(), y var person = new Person():',
+        text: (
+            <>
+                Explica la diferencia entre:{' '}
+                <pre style={{ textAlign: 'start !important' }}>
+                    <code>
+                        {`function Person(){}
+var person = Person()
+var person = new Person():`}
+                    </code>
+                </pre>
+            </>
+        ),
         explanation: (
             <>
                 <p>
@@ -852,7 +895,7 @@ console.log(sum); // Imprime 15`}
             </>
         ),
         answers: [
-            'function Person(){}: Declara una función. var person = Person(): Llama la función. var person = new Person(): Crea una nueva instancia con su propio this',
+            'function Person(){}: Declara una función. \nvar person = Person(): Llama la función. \nvar person = new Person(): Crea una nueva instancia con su propio this',
             'function Person(){} y var person = Person() son lo mismo',
             'var person = new Person() y var person = Person() son equivalentes',
             'Bar person, ese es con el que siempre me tomo un algo',
@@ -860,7 +903,12 @@ console.log(sum); // Imprime 15`}
     },
     {
         id: 'q11',
-        text: 'Explica las diferencias en el uso de foo entre \nfunction foo() {} y var foo = function() {}',
+        text: (
+            <>
+                Explica las diferencias en el uso de foo entre: <br />
+                <code>function foo() {}</code> <br /> <code>var foo = function() {}</code>
+            </>
+        ),
         explanation: (
             <>
                 <p>
@@ -3508,7 +3556,22 @@ console.log(sum); // Imprime 15`}
     },
     {
         id: 'q54',
-        text: "¿Cuál es la salida de las dos alertas de abajo?\n\nvar foo = 'Hello'\n;(function () {\n    var bar = ' World'\n    alert(foo + bar)\n})()\nalert(foo + bar)",
+        text: (
+            <>
+                ¿Cuál es la salida de las dos alertas de abajo?
+                <br />
+                <pre>
+                    <code>
+                        {`var foo = 'Hello'
+;(function () {
+    var bar = ' World'
+    alert(foo + bar)
+})()
+alert(foo + bar)`}
+                    </code>
+                </pre>
+            </>
+        ),
         explanation: (
             <>
                 <p>La salida de las dos alertas en el código dado será la siguiente:</p>
@@ -3676,7 +3739,24 @@ console.log(sum); // Imprime 15`}
     },
     {
         id: 'q57',
-        text: "¿Qué imprime el siguiente código?\n\nconsole.log('one')\nsetTimeout(function () {\n    console.log('two')\n}, 0)\nPromise.resolve().then(function () {\n    console.log('three')\n})\nconsole.log('four')",
+        text: (
+            <>
+                ¿Qué imprime el siguiente código?
+                <pre style={{ textAlign: 'start !important' }}>
+                    <code>
+                        {`console.log('one')
+setTimeout(function () {
+    console.log('two')
+}, 0)
+    Promise.resolve().then(function () {
+    console.log('three')
+})
+console.log('four')
+                            `}
+                    </code>
+                </pre>
+            </>
+        ),
         explanation: (
             <>
                 <p>El código dado imprimirá el siguiente resultado en la consola:</p>
@@ -3759,7 +3839,21 @@ console.log(sum); // Imprime 15`}
     // },
     {
         id: 'q59',
-        text: "¿Qué sacará por consola este código y por qué?\n\n;(function () {\n    var a = (b = 3)\n})()\n\nconsole.log('a defined? ' + (typeof a !== 'undefined'))\nconsole.log('b defined? ' + (typeof b !== 'undefined'))",
+        text: (
+            <>
+                ¿Qué sacará por consola este código y por qué?
+                <pre style={{ textAlign: 'start !important' }}>
+                    <code>
+                        {`;(function () {
+    var a = (b = 3)
+})()
+console.log('a defined? ' + (typeof a !== 'undefined'))
+console.log('b defined? ' + (typeof b !== 'undefined'))
+                                `}
+                    </code>
+                </pre>
+            </>
+        ),
         explanation: (
             <>
                 <p>El código dado imprimirá el siguiente resultado en la consola:</p>
@@ -3830,7 +3924,25 @@ console.log(sum); // Imprime 15`}
     },
     {
         id: 'q60',
-        text: "¿Considerando las dos funciones de abajo, devuelven lo mismo? ¿Por qué o por qué no?\n\nfunction foo1() {\n    return {\n        bar: 'hello'\n    }\n}\n\nfunction foo2() {\n    return\n    {\n        bar: 'hello'\n    }\n}",
+        text: (
+            <>
+                ¿Considerando las dos funciones de abajo, devuelven lo mismo? ¿Por qué o por qué no?
+                <pre style={{ textAlign: 'start !important' }}>
+                    <code>
+                        {`function foo1() {
+    return {
+        bar: 'hello'
+    }
+}
+function foo2() {
+    return {
+        bar: 'hello'
+    }
+}`}
+                    </code>
+                </pre>
+            </>
+        ),
         explanation: (
             <>
                 <p>

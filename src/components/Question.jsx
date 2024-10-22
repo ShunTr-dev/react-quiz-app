@@ -52,7 +52,7 @@ export default function Question({ index, onSelectAnswer, setShowExplanation }) 
             {showNextButton && (
                 <div className="actions">
                     <button className="button" onClick={handleNextQuestion}>
-                        Next
+                        Siguiente
                     </button>
                 </div>
             )}

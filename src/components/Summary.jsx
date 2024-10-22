@@ -1,26 +1,9 @@
 import QUESTIONS from '../questions.jsx'
 
 export default function Summary({ userAnswers }) {
-    const skippedAnswers = userAnswers.filter((answer) => answer === null)
-    const correctAnswers = userAnswers.filter((answer, index) => answer === QUESTIONS[index].answers[0])
-
-    const skippedAnswersShare = Math.round((skippedAnswers.length / userAnswers.length) * 100)
-    const correctAnswersShare = Math.round((correctAnswers.length / userAnswers.length) * 100)
-    const wrongAnswersShare = 100 - skippedAnswersShare - correctAnswersShare
-
     return (
         <div id="summary">
             <h2>Hola mundo 👋</h2>
-            <div id="summary-stats">
-                <p>
-                    <span className="number">{correctAnswersShare}%</span>
-                    <span className="text">respondidas correctamente</span>
-                </p>
-                <p>
-                    <span className="number">{wrongAnswersShare}%</span>
-                    <span className="text">respondidas incorrectamente</span>
-                </p>
-            </div>
             <ol>
                 {userAnswers.map((answer, index) => {
                     let cssClass = 'user-answer'
