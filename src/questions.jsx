@@ -26,7 +26,7 @@ export default [
                     activando también los eventos correspondientes en esos elementos padres si existen controladores
                     asignados.
                 </p>
-                <p>
+                <div>
                     <strong>Ventajas de la delegación de eventos</strong>
                     <br />
                     <ul>
@@ -47,8 +47,8 @@ export default [
                             el manejo de eventos.
                         </li>
                     </ul>
-                </p>
-                <p>
+                </div>
+                <div>
                     <strong>¿Cuándo usar la delegación de eventos?</strong>
                     <br />
                     <ul>
@@ -59,7 +59,7 @@ export default [
                             listeners.
                         </li>
                     </ul>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -102,7 +102,7 @@ export default [
                         <code>console.log(this); // En el navegador, imprime el objeto window</code>
                     </pre>
                 </p>
-                <p>
+                <div>
                     <strong>2. Dentro de una función:</strong>
                     <br />
                     En una función normal, el valor de <code>this</code> depende de cómo se llama a la función:
@@ -117,7 +117,7 @@ export default [
                             referencia al objeto global (<code>window</code> en navegadores).
                         </li>
                     </ul>
-                </p>
+                </div>
                 <p>
                     <strong>3. En el contexto de un objeto:</strong>
                     <br />
@@ -136,7 +136,7 @@ export default [
                     <code>this</code>. En su lugar, heredan el valor de <code>this</code> del contexto en el que fueron
                     definidas.
                 </p>
-                <p>
+                <div>
                     <strong>
                         ¿Cuándo usar <code>this</code>?
                     </strong>
@@ -149,7 +149,7 @@ export default [
                             <code>apply</code> o <code>bind</code>.
                         </li>
                     </ul>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -186,7 +186,7 @@ export default [
                     prototipo, y si tampoco lo encuentra, continuará subiendo por la cadena de prototipos (prototype
                     chain) hasta llegar al objeto <code>Object.prototype</code>, que es el prototipo raíz.
                 </p>
-                <p>
+                <div>
                     <strong>¿Cuándo usar la herencia prototipal?</strong>
                     <br />
                     <ul>
@@ -199,7 +199,7 @@ export default [
                             compartidos.
                         </li>
                     </ul>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -271,7 +271,7 @@ export default [
                     </pre>
                 </p>
 
-                <p>
+                <div>
                     <strong>Diferencias clave:</strong>
                     <br />
                     <ul>
@@ -294,7 +294,7 @@ export default [
                             La variable nunca ha sido declarada, y acceder a ella provoca un error.
                         </li>
                     </ul>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -392,7 +392,7 @@ for (const index in array) {
                     </p>
                 </p>
 
-                <p>
+                <div>
                     <strong>
                         5. Métodos de array como <code>map</code>, <code>filter</code> y <code>reduce</code>:
                     </strong>
@@ -442,7 +442,7 @@ console.log(sum); // Imprime 15`}
                             </pre>
                         </li>
                     </ul>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -610,7 +610,7 @@ console.log(sum); // Imprime 15`}
                     </pre>
                 </p>
 
-                <p>
+                <div>
                     <strong>Resumen de las diferencias:</strong>
                     <br />
                     <ul>
@@ -625,7 +625,7 @@ console.log(sum); // Imprime 15`}
                             resultados.
                         </li>
                     </ul>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -705,7 +705,7 @@ console.log(sum); // Imprime 15`}
                     propósito. A continuación se detallan sus características y diferencias principales:
                 </p>
 
-                <p>
+                <div>
                     <strong>1. Objetos nativos:</strong>
                     <br />
                     Los objetos nativos son parte del propio lenguaje JavaScript. Son aquellos que se definen en el
@@ -732,9 +732,9 @@ console.log(sum); // Imprime 15`}
                         Los objetos nativos están implementados directamente en el motor JavaScript y no dependen del
                         entorno en el que se ejecuta el código.
                     </p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>2. Objetos de host:</strong>
                     <br />
                     Los objetos de host son aquellos que son proporcionados por el entorno de ejecución de JavaScript,
@@ -763,9 +763,9 @@ console.log(sum); // Imprime 15`}
                         plataformas. No están definidos por el estándar ECMAScript, sino que son implementaciones
                         específicas del entorno de ejecución.
                     </p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>Resumen de las diferencias:</strong>
                     <br />
                     <ul>
@@ -784,7 +784,7 @@ console.log(sum); // Imprime 15`}
                             JavaScript, mientras que los objetos de host pueden variar de un entorno a otro.
                         </li>
                     </ul>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -872,7 +872,7 @@ var person = new Person():`}
                     </pre>
                 </p>
 
-                <p>
+                <div>
                     <strong>Resumen de las diferencias:</strong>
                     <br />
                     <ul>
@@ -891,7 +891,7 @@ var person = new Person():`}
                             métodos definidos en la función constructora.
                         </li>
                     </ul>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -962,7 +962,7 @@ var person = new Person():`}
                     </pre>
                 </p>
 
-                <p>
+                <div>
                     <strong>Resumen de las diferencias:</strong>
                     <br />
                     <ul>
@@ -983,7 +983,7 @@ var person = new Person():`}
                             su declaración.
                         </li>
                     </ul>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -1041,7 +1041,7 @@ var person = new Person():`}
                     </pre>
                 </p>
 
-                <p>
+                <div>
                     <strong>Parámetros:</strong>
                     <br />
                     El método <code>bind</code> toma como argumentos:
@@ -1055,9 +1055,9 @@ var person = new Person():`}
                             se llama la nueva función.
                         </li>
                     </ul>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>
                         Ventajas de usar <code>bind</code>:
                     </strong>
@@ -1077,7 +1077,7 @@ var person = new Person():`}
                             DOM.
                         </li>
                     </ul>
-                </p>
+                </div>
 
                 <p>
                     <strong>Ejemplo de uso en un manejador de eventos:</strong>
@@ -1192,7 +1192,7 @@ var person = new Person():`}
                     </pre>
                 </p>
 
-                <p>
+                <div>
                     <strong>Resumen:</strong>
                     <br />
                     <ul>
@@ -1215,7 +1215,7 @@ var person = new Person():`}
                             produce un error.
                         </li>
                     </ul>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -1448,7 +1448,7 @@ var person = new Person():`}
                     </p>
                 </p>
 
-                <p>
+                <div>
                     <strong>2. Diferencia con la propagación de eventos:</strong>
                     <br />
                     La principal diferencia entre la captura y la propagación es el orden en que se activan los
@@ -1463,7 +1463,7 @@ var person = new Person():`}
                             través de los elementos padres.
                         </li>
                     </ul>
-                </p>
+                </div>
 
                 <p>
                     <strong>3. Ejemplo de uso:</strong>
@@ -1562,7 +1562,7 @@ var person = new Person():`}
                     </p>
                 </p>
 
-                <p>
+                <div>
                     <strong>3. Diferencias clave:</strong>
                     <br />
                     <ul>
@@ -1579,7 +1579,7 @@ var person = new Person():`}
                             correspondiente y viceversa.
                         </li>
                     </ul>
-                </p>
+                </div>
 
                 <p>
                     <strong>4. Ejemplo práctico:</strong>
@@ -1907,7 +1907,7 @@ var person = new Person():`}
                     </pre>
                 </p>
 
-                <p>
+                <div>
                     <strong>2. Comportamientos del modo estricto:</strong>
                     <br />
                     Cuando se ejecuta en modo estricto, JavaScript impone una serie de reglas más estrictas, tales como:
@@ -1965,7 +1965,7 @@ var person = new Person():`}
                             </pre>
                         </li>
                     </ul>
-                </p>
+                </div>
 
                 <p>
                     <strong>3. Beneficios del modo estricto:</strong>
