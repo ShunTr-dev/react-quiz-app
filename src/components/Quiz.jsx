@@ -21,7 +21,6 @@ export default function Quiz() {
         return <Summary userAnswers={userAnswers} />
     }
 
-    const parser = new DOMParser()
     return (
         <>
             <div id="quiz" className="quiz">

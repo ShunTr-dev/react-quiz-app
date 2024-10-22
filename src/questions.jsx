@@ -92,7 +92,7 @@ export default [
                     momento en que se define. Esto significa que su valor puede cambiar según el contexto de ejecución.
                     A continuación, se explican algunos casos comunes de cómo funciona:
                 </p>
-                <p>
+                <div>
                     <strong>1. En el contexto global (o fuera de una función):</strong>
                     <br />
                     Cuando <code>this</code> se utiliza en el contexto global (es decir, fuera de cualquier función), en
@@ -101,7 +101,7 @@ export default [
                     <pre>
                         <code>console.log(this); // En el navegador, imprime el objeto window</code>
                     </pre>
-                </p>
+                </div>
                 <div>
                     <strong>2. Dentro de una función:</strong>
                     <br />
@@ -227,7 +227,7 @@ export default [
                     utilizan.
                 </p>
 
-                <p>
+                <div>
                     <strong>
                         1. <code>undefined</code>:
                     </strong>
@@ -240,9 +240,9 @@ export default [
                             let x; console.log(x); // Imprime undefined, porque x está declarada pero no tiene valor
                         </code>
                     </pre>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>
                         2. <code>null</code>:
                     </strong>
@@ -256,9 +256,9 @@ export default [
                             manera explícita
                         </code>
                     </pre>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>
                         3. <code>undeclared</code>:
                     </strong>
@@ -269,7 +269,7 @@ export default [
                     <pre>
                         <code>console.log(z); // ReferenceError: z is not defined, porque nunca se declaró</code>
                     </pre>
-                </p>
+                </div>
 
                 <div>
                     <strong>Diferencias clave:</strong>
@@ -320,7 +320,7 @@ export default [
                     los elementos de un array. A continuación, se describen las más comunes:
                 </p>
 
-                <p>
+                <div>
                     <strong>
                         1. Bucle <code>for</code>:
                     </strong>
@@ -335,9 +335,9 @@ for (let i = 0; i < array.length; i++) {
 }`}
                         </code>
                     </pre>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>
                         2. Bucle <code>forEach</code>:
                     </strong>
@@ -352,9 +352,9 @@ array.forEach((element) => {
 });`}
                         </code>
                     </pre>
-                </p>
+                </div>
 
-                <p>
+                <pdiv>
                     <strong>
                         3. Bucle <code>for...of</code>:
                     </strong>
@@ -369,9 +369,9 @@ for (const element of array) {
 }`}
                         </code>
                     </pre>
-                </p>
+                </pdiv>
 
-                <p>
+                <div>
                     <strong>
                         4. Bucle <code>for...in</code>:
                     </strong>
@@ -390,7 +390,7 @@ for (const index in array) {
                         Nota: Al usar <code>for...in</code>, es importante tener en cuenta que puede enumerar
                         propiedades heredadas y no solo los índices del array.
                     </p>
-                </p>
+                </div>
 
                 <div>
                     <strong>
@@ -462,7 +462,7 @@ console.log(sum); // Imprime 15`}
                     propiedades de un objeto. A continuación, se describen las más comunes:
                 </p>
 
-                <p>
+                <div>
                     <strong>
                         1. Bucle <code>for...in</code>:
                     </strong>
@@ -482,9 +482,9 @@ console.log(sum); // Imprime 15`}
         }
     `}
                     </pre>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>
                         2. <code>Object.keys()</code>:
                     </strong>
@@ -505,9 +505,9 @@ console.log(sum); // Imprime 15`}
         });
     `}
                     </pre>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>
                         3. <code>Object.values()</code>:
                     </strong>
@@ -527,9 +527,9 @@ console.log(sum); // Imprime 15`}
         });
     `}
                     </pre>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>
                         4. <code>Object.entries()</code>:
                     </strong>
@@ -549,7 +549,7 @@ console.log(sum); // Imprime 15`}
         });
     `}
                     </pre>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -574,7 +574,7 @@ console.log(sum); // Imprime 15`}
                     JavaScript radica en su propósito y el valor que devuelven.
                 </p>
 
-                <p>
+                <div>
                     <strong>
                         1. <code>Array.forEach()</code>:
                     </strong>
@@ -591,9 +591,9 @@ console.log(sum); // Imprime 15`}
                     });
                   `}
                     </pre>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>
                         2. <code>Array.map()</code>:
                     </strong>
@@ -608,7 +608,7 @@ console.log(sum); // Imprime 15`}
                     console.log(dobles); // Imprime [2, 4, 6, 8, 10], que es un nuevo array
                   `}
                     </pre>
-                </p>
+                </div>
 
                 <div>
                     <strong>Resumen de las diferencias:</strong>
@@ -652,7 +652,7 @@ console.log(sum); // Imprime 15`}
                     anónimas es en la definición de manejadores de eventos o callbacks.
                 </p>
 
-                <p>
+                <div>
                     <strong>Ejemplo de uso en manejadores de eventos:</strong>
                     <br />
                     Cuando se agrega un manejador de eventos a un elemento del DOM, a menudo se utiliza una función
@@ -667,9 +667,9 @@ console.log(sum); // Imprime 15`}
                     });
                   `}
                     </pre>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>Ejemplo de uso en funciones de orden superior:</strong>
                     <br />
                     Las funciones anónimas también son comunes en funciones de orden superior, como <code>
@@ -685,7 +685,7 @@ console.log(sum); // Imprime 15`}
                     console.log(cuadrados); // Imprime [1, 4, 9, 16, 25]
                   `}
                     </pre>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -817,7 +817,7 @@ var person = new Person():`}
                     <code>var person = new Person();</code>.
                 </p>
 
-                <p>
+                <div>
                     <strong>
                         1. <code>function Person(){}</code>:
                     </strong>
@@ -834,9 +834,9 @@ var person = new Person():`}
       }
     `}
                     </pre>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>
                         2. <code>var person = Person();</code>:
                     </strong>
@@ -852,9 +852,9 @@ var person = new Person():`}
       console.log(person); // undefined (o el valor del objeto global si no se usa 'strict mode')
     `}
                     </pre>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>
                         3. <code>var person = new Person();</code>:
                     </strong>
@@ -870,7 +870,7 @@ var person = new Person():`}
       console.log(person.edad); // Imprime 30
     `}
                     </pre>
-                </p>
+                </div>
 
                 <div>
                     <strong>Resumen de las diferencias:</strong>
@@ -918,7 +918,7 @@ var person = new Person():`}
                     <code>var foo = function() {};</code>.
                 </p>
 
-                <p>
+                <div>
                     <strong>
                         1. <code>function foo() {}</code>:
                     </strong>
@@ -937,9 +937,9 @@ var person = new Person():`}
       }
     `}
                     </pre>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>
                         2. <code>var foo = function() {};</code>:
                     </strong>
@@ -960,7 +960,7 @@ var person = new Person():`}
       };
     `}
                     </pre>
-                </p>
+                </div>
 
                 <div>
                     <strong>Resumen de las diferencias:</strong>
@@ -1019,7 +1019,7 @@ var person = new Person():`}
                     eventos o métodos de objetos.
                 </p>
 
-                <p>
+                <div>
                     <strong>¿Cómo funciona?</strong>
                     <br />
                     Cuando se llama a <code>bind</code> en una función, se devuelve una nueva función con el{' '}
@@ -1039,7 +1039,7 @@ var person = new Person():`}
       saludarJuan(); // Imprime "Hola, Juan"
     `}
                     </pre>
-                </p>
+                </div>
 
                 <div>
                     <strong>Parámetros:</strong>
@@ -1079,7 +1079,7 @@ var person = new Person():`}
                     </ul>
                 </div>
 
-                <p>
+                <div>
                     <strong>Ejemplo de uso en un manejador de eventos:</strong>
                     <br />
                     En este caso, puedes usar <code>bind</code> para asegurar que el <code>this</code> dentro de la
@@ -1097,7 +1097,7 @@ var person = new Person():`}
       boton.addEventListener('click', obj.saludar.bind(obj)); // 'this' es obj
     `}
                     </pre>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -1132,7 +1132,7 @@ var person = new Person():`}
                     y las funciones.
                 </p>
 
-                <p>
+                <div>
                     <strong>1. Hoisting de funciones:</strong>
                     <br />
                     Las funciones declaradas con la palabra clave <code>function</code> son completamente elevadas. Esto
@@ -1151,9 +1151,9 @@ var person = new Person():`}
                         En este caso, el código funcionará correctamente y mostrará "¡Hola!" en la consola, porque la
                         declaración de la función es elevada.
                     </p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>2. Hoisting de variables:</strong>
                     <br />
                     Para las variables declaradas con <code>var</code>, solo la declaración es elevada, no la
@@ -1173,9 +1173,9 @@ var person = new Person():`}
                         código no produce un error, pero imprime <code>undefined</code> debido a que solo la declaración
                         fue elevada.
                     </p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>
                         3. Hoisting con <code>let</code> y <code>const</code>:
                     </strong>
@@ -1190,7 +1190,7 @@ var person = new Person():`}
       let miVariableLet = 20;
     `}
                     </pre>
-                </p>
+                </div>
 
                 <div>
                     <strong>Resumen:</strong>
@@ -1238,7 +1238,7 @@ var person = new Person():`}
                     motor de JavaScript lo hace automáticamente).
                 </p>
 
-                <p>
+                <div>
                     <strong>1. Coerción implícita:</strong>
                     <br />
                     La coerción implícita ocurre cuando JavaScript convierte automáticamente un tipo de dato en otro.
@@ -1255,9 +1255,9 @@ var person = new Person():`}
                         En este caso, el número <code>5</code> se convierte en la cadena <code>"5"</code> antes de
                         realizar la concatenación.
                     </p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>2. Coerción explícita:</strong>
                     <br />
                     La coerción explícita es cuando el programador convierte un tipo de dato a otro de manera
@@ -1275,9 +1275,9 @@ var person = new Person():`}
                         Aquí, la cadena <code>"10"</code> se convierte explícitamente a un número utilizando la función{' '}
                         <code>Number()</code>.
                     </p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>3. Ejemplos comunes de coerción:</strong>
                     <br />- **Comparaciones:** Al comparar diferentes tipos de datos, JavaScript puede realizar coerción
                     para evaluar la expresión.
@@ -1294,9 +1294,9 @@ var person = new Person():`}
       console.log("5" - 2); // 3 (5 se convierte a número)
     `}
                     </pre>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>4. Consideraciones sobre la coerción:</strong>
                     <br />
                     La coerción de tipos puede llevar a resultados inesperados si no se comprende completamente, por lo
@@ -1308,7 +1308,7 @@ var person = new Person():`}
       console.log(5 === "5"); // false (sin coerción)
     `}
                     </pre>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -1332,7 +1332,7 @@ var person = new Person():`}
                     de árbol anidadas.
                 </p>
 
-                <p>
+                <div>
                     <strong>1. Cómo funciona la propagación de eventos:</strong>
                     <br />
                     Cuando se produce un evento en un elemento (por ejemplo, un clic en un botón), el evento se dispara
@@ -1356,7 +1356,7 @@ var person = new Person():`}
                         En este ejemplo, si se hace clic en el elemento hijo, solo se ejecutará el manejador de eventos
                         para el hijo y se detendrá la propagación al padre.
                     </p>
-                </p>
+                </div>
 
                 <p>
                     <strong>2. Ventajas de la propagación de eventos:</strong>
@@ -1366,7 +1366,7 @@ var person = new Person():`}
                     en un padre puede gestionar eventos de hijos que se agregan dinámicamente al DOM.
                 </p>
 
-                <p>
+                <div>
                     <strong>3. Diferencia con la captura de eventos:</strong>
                     <br />
                     Además del bubbling, existe un proceso llamado <strong>captura de eventos</strong>, donde el evento
@@ -1380,9 +1380,9 @@ var person = new Person():`}
                   `}
                     </pre>
                     <p>En este caso, el evento se manejaría en el padre antes de llegar al hijo.</p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>4. Ejemplo de uso:</strong>
                     <br />
                     Imagina que tienes una lista de elementos <code>&lt;li&gt;</code> dentro de un{' '}
@@ -1403,7 +1403,7 @@ var person = new Person():`}
                         En este caso, cuando se hace clic en cualquier <code>&lt;li&gt;</code>, el evento burbujeará
                         hasta el <code>&lt;ul&gt;</code>, donde se puede manejar.
                     </p>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -1427,7 +1427,7 @@ var person = new Person():`}
                     los manejadores de eventos se activen en el orden inverso al de la burbuja.
                 </p>
 
-                <p>
+                <div>
                     <strong>1. Cómo funciona la captura de eventos:</strong>
                     <br />
                     Cuando un evento ocurre, primero se captura en el elemento raíz (el documento) y luego se propaga
@@ -1446,7 +1446,7 @@ var person = new Person():`}
                         En este ejemplo, si se hace clic en un elemento hijo, el manejador en el padre se ejecutará
                         antes de que se ejecute el manejador en el hijo.
                     </p>
-                </p>
+                </div>
 
                 <div>
                     <strong>2. Diferencia con la propagación de eventos:</strong>
@@ -1465,7 +1465,7 @@ var person = new Person():`}
                     </ul>
                 </div>
 
-                <p>
+                <div>
                     <strong>3. Ejemplo de uso:</strong>
                     <br />
                     Imagina que tienes una estructura de elementos anidados y quieres manejar clics en un elemento
@@ -1490,7 +1490,7 @@ var person = new Person():`}
                         <code>Clic en el elemento hijo</code>. Esto demuestra cómo el manejador de captura se ejecuta
                         antes que el manejador de propagación.
                     </p>
-                </p>
+                </div>
 
                 <p>
                     <strong>4. Aplicaciones prácticas:</strong>
@@ -1519,7 +1519,7 @@ var person = new Person():`}
                     manejan los elementos HTML y sus características.
                 </p>
 
-                <p>
+                <div>
                     <strong>1. Atributos:</strong>
                     <br />
                     Los atributos son las características definidas en el HTML que están presentes en el marcado de un
@@ -1534,9 +1534,9 @@ var person = new Person():`}
                         En este caso, <code>type</code>, <code>id</code> y <code>value</code> son atributos del elemento{' '}
                         <code>&lt;input&gt;</code>.
                     </p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>2. Propiedades:</strong>
                     <br />
                     Las propiedades son las representaciones de esos atributos dentro del objeto DOM en JavaScript.
@@ -1549,7 +1549,7 @@ var person = new Person():`}
                     console.log(miInput.value); // Imprime "Hola"
                   `}
                     </pre>
-                    <p>
+                    <div>
                         Aquí, <code>value</code> es una propiedad del objeto <code>miInput</code> que refleja el
                         atributo <code>value</code> del HTML. Sin embargo, si cambias el valor de la propiedad a través
                         de JavaScript:
@@ -1559,8 +1559,8 @@ var person = new Person():`}
                     console.log(miInput.value); // Imprime "Adiós"
                   `}
                         </pre>
-                    </p>
-                </p>
+                    </div>
+                </div>
 
                 <div>
                     <strong>3. Diferencias clave:</strong>
@@ -1581,7 +1581,7 @@ var person = new Person():`}
                     </ul>
                 </div>
 
-                <p>
+                <div>
                     <strong>4. Ejemplo práctico:</strong>
                     <br />
                     Imagina un elemento <code>&lt;img&gt;</code> con un atributo <code>src</code>:
@@ -1612,7 +1612,7 @@ var person = new Person():`}
                     </pre>
                     El atributo HTML <code>src</code> no se actualiza automáticamente en el código HTML; sin embargo, la
                     propiedad reflejará el nuevo valor.
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -1645,7 +1645,7 @@ var person = new Person():`}
                     el código.
                 </p>
 
-                <p>
+                <div>
                     <strong>
                         1. Operador de igualdad abstracta (<code>==</code>):
                     </strong>
@@ -1664,9 +1664,9 @@ var person = new Person():`}
                         Aquí, puedes ver cómo <code>==</code> permite la comparación de valores de diferentes tipos
                         mediante coerción.
                     </p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>
                         2. Operador de igualdad estricta (<code>===</code>):
                     </strong>
@@ -1684,7 +1684,7 @@ var person = new Person():`}
                         En este caso, <code>===</code> es más riguroso, lo que ayuda a prevenir errores involuntarios
                         que pueden ocurrir con coerción de tipos.
                     </p>
-                </p>
+                </div>
 
                 <p>
                     <strong>3. ¿Cuándo usar cada uno?</strong>
@@ -1694,7 +1694,7 @@ var person = new Person():`}
                     común y generalmente se recomienda evitarlo para mantener el código claro y sin errores.
                 </p>
 
-                <p>
+                <div>
                     <strong>4. Ejemplos adicionales:</strong>
                     <br />
                     Considera los siguientes ejemplos para ilustrar aún más la diferencia:
@@ -1707,7 +1707,7 @@ var person = new Person():`}
                     console.log(true === 1); // false (booleano vs. número)
                   `}
                     </pre>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -1729,7 +1729,7 @@ var person = new Person():`}
                     sensible y evitar ataques como el Cross-Site Scripting (XSS) y el Cross-Site Request Forgery (CSRF).
                 </p>
 
-                <p>
+                <div>
                     <strong>1. Definición de origen:</strong>
                     <br />
                     Un "origen" se define como la combinación del <strong>protocolo</strong> (http, https), el{' '}
@@ -1745,7 +1745,7 @@ var person = new Person():`}
                     - http://example.com/path // Diferente ruta, pero mismo origen
                   `}
                     </pre>
-                </p>
+                </div>
 
                 <p>
                     <strong>2. Implicaciones de la política de mismo origen:</strong>
@@ -1755,7 +1755,7 @@ var person = new Person():`}
                     sitio web B, el navegador bloqueará esa solicitud si ambos sitios tienen orígenes diferentes.
                 </p>
 
-                <p>
+                <div>
                     <strong>3. Ejemplo:</strong>
                     <br />
                     Considera el siguiente caso:
@@ -1771,9 +1771,9 @@ var person = new Person():`}
                         Aquí, la solicitud a <code>anotherdomain.com</code> será bloqueada por la política de mismo
                         origen, ya que el dominio es diferente.
                     </p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>4. Excepciones y soluciones:</strong>
                     <br />- **CORS (Cross-Origin Resource Sharing):** Es una forma de permitir que los recursos sean
                     compartidos entre diferentes orígenes. Los servidores pueden enviar cabeceras HTTP específicas para
@@ -1785,7 +1785,7 @@ var person = new Person():`}
                     </pre>
                     - **JSONP:** Una técnica que permite hacer solicitudes cross-origin mediante el uso de etiquetas
                     `script`, aunque está siendo reemplazada por CORS debido a problemas de seguridad.
-                </p>
+                </div>
 
                 <p>
                     <strong>5. Resumen:</strong>
@@ -1816,7 +1816,7 @@ var person = new Person():`}
                     en una alternativa más breve a una declaración <code>if-else</code>.
                 </p>
 
-                <p>
+                <div>
                     <strong>1. Sintaxis:</strong>
                     <br />
                     La sintaxis del operador ternario es la siguiente:
@@ -1829,9 +1829,9 @@ var person = new Person():`}
                         Aquí, <code>condición</code> es la expresión que se evalúa. Si es <code>true</code>, se retorna{' '}
                         <code>valorSiVerdadero</code>; si es <code>false</code>, se retorna <code>valorSiFalso</code>.
                     </p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>2. Ejemplo práctico:</strong>
                     <br />
                     Considera el siguiente ejemplo donde determinamos si una persona es mayor de edad:
@@ -1847,7 +1847,7 @@ var person = new Person():`}
                         tomará el valor <code>'Es mayor de edad'</code>; de lo contrario, tomará el valor{' '}
                         <code>'Es menor de edad'</code>.
                     </p>
-                </p>
+                </div>
 
                 <p>
                     <strong>3. Ventajas del operador ternario:</strong>
@@ -1855,7 +1855,7 @@ var person = new Person():`}
                     Para condiciones simples, puede mejorar la claridad del código al evitar estructuras más largas.
                 </p>
 
-                <p>
+                <div>
                     <strong>4. Desventajas del operador ternario:</strong>
                     <br />- **Complejidad:** Para condiciones más complejas, el uso excesivo del operador ternario puede
                     hacer que el código sea más difícil de leer y mantener. - **Anidación:** Aunque se puede anidar
@@ -1865,7 +1865,7 @@ var person = new Person():`}
                     const resultado = (edad < 13) ? 'Niño' : (edad < 18) ? 'Adolescente' : 'Adulto';
                   `}
                     </pre>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -1887,7 +1887,7 @@ var person = new Person():`}
                     ciertas características problemáticas del lenguaje.
                 </p>
 
-                <p>
+                <div>
                     <strong>1. Activación del modo estricto:</strong>
                     <br />
                     Para activar el modo estricto, se debe agregar la cadena <code>'use strict';</code> al principio de
@@ -1905,7 +1905,7 @@ var person = new Person():`}
                     }
                   `}
                     </pre>
-                </p>
+                </div>
 
                 <div>
                     <strong>2. Comportamientos del modo estricto:</strong>
@@ -2025,7 +2025,7 @@ var person = new Person():`}
                     es importante en el manejo de datos y en la forma en que los programas gestionan el estado.
                 </p>
 
-                <p>
+                <div>
                     <strong>1. Objetos mutables:</strong>
                     <br />
                     Los objetos mutables son aquellos que pueden ser modificados después de haber sido creados. Esto
@@ -2042,9 +2042,9 @@ var person = new Person():`}
                         Aquí, el objeto <code>objetoMut</code> se modifica cambiando su propiedad <code>nombre</code>{' '}
                         sin necesidad de crear un nuevo objeto.
                     </p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>2. Objetos inmutables:</strong>
                     <br />
                     Los objetos inmutables, por otro lado, no pueden ser modificados después de su creación. Cualquier
@@ -2063,7 +2063,7 @@ var person = new Person():`}
                         En este caso, <code>cadenaInmut</code> no se modifica; en cambio, se crea una nueva cadena{' '}
                         <code>nuevaCadena</code> que contiene el valor modificado.
                     </p>
-                </p>
+                </div>
 
                 <p>
                     <strong>3. Ventajas y desventajas:</strong>
@@ -2082,7 +2082,7 @@ var person = new Person():`}
                     </p>
                 </p>
 
-                <p>
+                <div>
                     <strong>4. Ejemplo en contexto:</strong>
                     <br />
                     Supongamos que tenemos un arreglo de números. Si queremos añadir un número a un arreglo mutable,
@@ -2094,7 +2094,7 @@ var person = new Person():`}
                     console.log(numeros); // [1, 2, 3, 4]
                   `}
                     </pre>
-                    <p>
+                    <div>
                         En cambio, si trabajamos con un arreglo inmutable, tendríamos que crear un nuevo arreglo:
                         <pre>
                             {`
@@ -2104,8 +2104,8 @@ var person = new Person():`}
                     console.log(nuevosNumeros); // [1, 2, 3, 4]
                   `}
                         </pre>
-                    </p>
-                </p>
+                    </div>
+                </div>
             </>
         ),
         answers: [
@@ -2126,7 +2126,7 @@ var person = new Person():`}
                     ejecución de un programa.
                 </p>
 
-                <p>
+                <div>
                     <strong>1. Funciones síncronas:</strong>
                     <br />
                     Las funciones síncronas son aquellas que se ejecutan de manera secuencial. Cuando se invoca una
@@ -2150,9 +2150,9 @@ var person = new Person():`}
                         En este ejemplo, la <code>tareaSinc()</code> bloquea la ejecución hasta que termina, por lo que
                         "Tarea 2" no se imprime hasta que "Tarea 1" ha finalizado.
                     </p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>2. Funciones asíncronas:</strong>
                     <br />
                     Las funciones asíncronas permiten que el programa continúe ejecutándose sin esperar a que una
@@ -2176,9 +2176,9 @@ var person = new Person():`}
                         En este caso, la función <code>tareaAsinc()</code> inicia una operación asíncrona, y "Tarea 2"
                         se imprime inmediatamente después, sin esperar a que "Tarea 1" termine.
                     </p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>3. Uso de promesas y async/await:</strong>
                     <br />
                     Las promesas son un mecanismo que permite manejar la finalización de operaciones asíncronas. La
@@ -2200,7 +2200,7 @@ var person = new Person():`}
                         En este ejemplo, <code>tareaAsync()</code> inicia una tarea asíncrona y luego "Tarea 2" se
                         imprime antes de que "Tarea 1" se complete.
                     </p>
-                </p>
+                </div>
 
                 <p>
                     <strong>4. Ventajas y desventajas:</strong>
@@ -2245,7 +2245,7 @@ var person = new Person():`}
                     JavaScript utiliza el event loop junto con la cola de tareas y la pila de llamadas.
                 </p>
 
-                <p>
+                <div>
                     <strong>2. Componentes clave:</strong>
                     <br />- **Pila de llamadas (Call Stack):** Es donde se llevan a cabo las funciones de ejecución.
                     Cuando se llama a una función, se apila en la parte superior de la pila y se ejecuta. Cuando la
@@ -2258,9 +2258,9 @@ var person = new Person():`}
                     tarea(); // Se apila y se ejecuta
                   `}
                     </pre>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     - **Cola de tareas (Task Queue):** Es donde se almacenan las funciones que deben ejecutarse una vez
                     que la pila de llamadas esté vacía. Esto incluye callbacks de eventos y funciones programadas con{' '}
                     <code>setTimeout</code> o <code>setInterval</code>.
@@ -2271,7 +2271,7 @@ var person = new Person():`}
                     }, 0); // Se añade a la cola de tareas
                   `}
                     </pre>
-                </p>
+                </div>
 
                 <p>
                     - **Event Loop:** Es el que monitorea la pila de llamadas y la cola de tareas. Si la pila está
@@ -2295,7 +2295,7 @@ var person = new Person():`}
                     </ol>
                 </p>
 
-                <p>
+                <div>
                     <strong>4. Ejemplo ilustrativo:</strong>
                     <br />
                     Considera el siguiente código:
@@ -2323,7 +2323,7 @@ var person = new Person():`}
                         función del <code>setTimeout</code> se mueve a la cola de tareas y se ejecuta solo después de
                         que la pila de llamadas esté vacía.
                     </p>
-                </p>
+                </div>
 
                 <p>
                     <strong>5. Importancia del event loop:</strong>
@@ -2354,7 +2354,7 @@ var person = new Person():`}
                     las principales diferencias entre ellas.
                 </p>
 
-                <p>
+                <div>
                     <strong>1. Alcance (Scope):</strong>
                     <br />- <strong>var:</strong> Tiene un alcance de función o global. Esto significa que si se declara
                     una variable con <code>var</code> dentro de una función, no se puede acceder a ella fuera de esa
@@ -2389,9 +2389,9 @@ var person = new Person():`}
                     console.log(z); // ReferenceError: z is not defined
                   `}
                     </pre>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>2. Mutabilidad:</strong>
                     <br />- <strong>var y let:</strong> Ambas permiten la reasignación de valores.
                     <pre>
@@ -2411,7 +2411,7 @@ var person = new Person():`}
                     c = 6; // TypeError: Assignment to constant variable.
                   `}
                     </pre>
-                    <p>
+                    <div>
                         Sin embargo, los objetos y arreglos declarados con <code>const</code> pueden ser mutables, lo
                         que significa que puedes modificar sus propiedades o elementos, pero no puedes reasignar el
                         objeto o arreglo completo.
@@ -2422,10 +2422,10 @@ var person = new Person():`}
                     console.log(obj); // { nombre: 'Pedro' }
                   `}
                         </pre>
-                    </p>
-                </p>
+                    </div>
+                </div>
 
-                <p>
+                <div>
                     <strong>3. Hoisting:</strong>
                     <br />- <strong>var:</strong> Las variables declaradas con <code>var</code> son "hoisted" (elevadas)
                     a la parte superior de su contexto de ejecución, lo que significa que se pueden usar antes de su
@@ -2447,7 +2447,7 @@ var person = new Person():`}
                     let e = 15;
                   `}
                     </pre>
-                </p>
+                </div>
 
                 <p>
                     <strong>4. Recomendaciones de uso:</strong>
@@ -2488,7 +2488,7 @@ var person = new Person():`}
                     array como <code>map</code>, <code>filter</code> y <code>reduce</code>.
                 </p>
 
-                <p>
+                <div>
                     <strong>
                         Ejemplo de uso con <code>map</code>:
                     </strong>
@@ -2514,7 +2514,7 @@ var person = new Person():`}
                     console.log(cuadrados); // [1, 4, 9, 16, 25]
                   `}
                     </pre>
-                </p>
+                </div>
 
                 <p>
                     <strong>Ventajas de usar funciones flecha:</strong>
@@ -2529,7 +2529,7 @@ var person = new Person():`}
                     se necesita acceder al contexto del objeto que contiene el método.
                 </p>
 
-                <p>
+                <div>
                     <strong>
                         Ejemplo de uso de <code>this</code>:
                     </strong>
@@ -2553,7 +2553,7 @@ var person = new Person():`}
                         <code>this</code> que la función <code>saludar</code>, permitiendo acceder correctamente a la
                         propiedad <code>nombre</code> del objeto <code>persona</code>.
                     </p>
-                </p>
+                </div>
             </>
         ),
         answers: [
@@ -2584,7 +2584,7 @@ var person = new Person():`}
                     arrays, callbacks y la creación de funciones personalizadas.
                 </p>
 
-                <p>
+                <div>
                     <strong>Ejemplo de una función de orden superior:</strong>
                     <br />
                     Consideremos una función llamada <code>operar</code> que recibe dos números y una función como
@@ -2608,14 +2608,14 @@ var person = new Person():`}
                     console.log(operar(5, 3, restar)); // 2
                   `}
                     </pre>
-                </p>
+                </div>
 
                 <p>
                     En este caso, <code>operar</code> es una función de orden superior porque acepta una función (
                     <code>operacion</code>) como argumento y la invoca con los dos números proporcionados.
                 </p>
 
-                <p>
+                <div>
                     <strong>Ejemplo de una función de orden superior que devuelve otra función:</strong>
                     <br />
                     También se puede definir una función de orden superior que devuelva una nueva función. Por ejemplo,
@@ -2632,7 +2632,7 @@ var person = new Person():`}
                     console.log(duplicar(5)); // 10
                   `}
                     </pre>
-                </p>
+                </div>
 
                 <p>
                     En este caso, <code>crearMultiplicador</code> es una función de orden superior que devuelve otra
@@ -2658,7 +2658,7 @@ var person = new Person():`}
                     continuación, se presentan ejemplos de desestructuración tanto de objetos como de arreglos.
                 </p>
 
-                <p>
+                <div>
                     <strong>Ejemplo de desestructuración de un objeto:</strong>
                     <br />
                     Supongamos que tenemos un objeto que representa a una persona:
@@ -2679,9 +2679,9 @@ var person = new Person():`}
                         En este ejemplo, se desestructuran las propiedades <code>nombre</code> y <code>edad</code> del
                         objeto <code>persona</code>, asignándolas a variables con el mismo nombre.
                     </p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>Ejemplo de desestructuración de un array:</strong>
                     <br />
                     Consideremos un array que contiene números:
@@ -2698,9 +2698,9 @@ var person = new Person():`}
                         En este caso, se desestructuran los primeros dos elementos del array <code>numeros</code>,
                         asignándolos a las variables <code>primero</code> y <code>segundo</code>.
                     </p>
-                </p>
+                </div>
 
-                <p>
+                <div>
                     <strong>Desestructuración con valores por defecto:</strong>
                     <br />
                     También se pueden proporcionar valores por defecto en la desestructuración. Por ejemplo, si una
@@ -2716,7 +2716,7 @@ var person = new Person():`}
                     console.log(edad);   // 25 (valor por defecto)
                   `}
                     </pre>
-                </p>
+                </div>
 
                 <p>
                     Esto es útil cuando se desea asegurar que una variable tenga un valor incluso si la propiedad
@@ -2743,7 +2743,7 @@ var person = new Person():`}
                     cadenas multilínea.
                 </p>
 
-                <p>
+                <div>
                     <strong>Ejemplo básico de literales de plantilla:</strong>
                     <br />
                     Supongamos que queremos crear una cadena que incluya el nombre y la edad de una persona:
@@ -2756,7 +2756,7 @@ var person = new Person():`}
                     console.log(mensaje); // 'Hola, mi nombre es Juan y tengo 30 años.'
                   `}
                     </pre>
-                </p>
+                </div>
 
                 <p>
                     En este ejemplo, las variables <code>nombre</code> y <code>edad</code> se interpolan dentro de la
@@ -2764,7 +2764,7 @@ var person = new Person():`}
                     el texto.
                 </p>
 
-                <p>
+                <div>
                     <strong>Ejemplo de cadena multilínea:</strong>
                     <br />
                     Los literales de plantilla también permiten crear cadenas que ocupan varias líneas sin necesidad de
@@ -2779,7 +2779,7 @@ var person = new Person():`}
                     console.log(mensajeMultilinea);
                   `}
                     </pre>
-                </p>
+                </div>
 
                 <p>
                     En este caso, la cadena se crea con saltos de línea incluidos, lo que facilita la legibilidad del
